@@ -1,4 +1,18 @@
-<h1>Burgers!</h1>
+<h1>Make burgers, Eat burgers!</h1>
+
+<div  id="addBurgerDiv">
+  <h2>Add a Burger</h2>
+  <form class="create-update-form" action="/" method="POST">
+
+  <div class="form-group">
+    <label for="ca">Burger Name:</label>
+    <input type="text" name="name">
+  </div>
+
+  
+  <button type="submit">Add Burger</button>
+  </form>
+</div>
 
 <h2>Burgers that need to be ate!</h2>
 
@@ -19,7 +33,7 @@
   {{/each}}
 </ul>
 
-<h2>Burgers that are eaten!</h2>
+<h2>Burgers consumed</h2>
 
 <ul>
   {{#each burgers}}
@@ -33,14 +47,4 @@
   {{/each}}
 </ul>
 
-<h2>Add a Burger</h2>
-<form class="create-update-form" action="/" method="POST">
 
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" name="name">
-  </div>
-
-  
-  <button type="submit">Add Burger</button>
-</form>
